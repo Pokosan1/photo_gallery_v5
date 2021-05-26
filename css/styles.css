@@ -1,0 +1,29 @@
+* {
+box-sizing: border-box;
+}
+.search {
+    display: block;
+    width: 500px;
+    height: 40px;
+    margin: 15px auto;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+
+.gallery {
+
+    max-width: 850px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 1em;
+    justify-content: center;
+}
+
+input[type='search']::placeholder {
+    padding-left: 10px;
+    font-size: .8em;
+}
+
